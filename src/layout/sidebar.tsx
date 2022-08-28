@@ -1,4 +1,4 @@
-import { faChartBar, faClipboardList, faParagraph, faThLarge } from '@fortawesome/free-solid-svg-icons'
+import { faChartBar, faClipboardList, faParagraph, faScroll, faThLarge } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
@@ -18,6 +18,10 @@ export default function Sidebar() {
                 <List.Item to="/forms">
                     <FontAwesomeIcon icon={faClipboardList} />
                     <span>Forms</span>
+                </List.Item>
+                <List.Item to="/posts">
+                    <FontAwesomeIcon icon={faScroll} />
+                    <span>Posts</span>
                 </List.Item>
             </List>
         </div>
